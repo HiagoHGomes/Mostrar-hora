@@ -27,5 +27,30 @@ function carregar( ) {
         document.body.style.background = '#000000'
     }
     
+    let a = new Date();
+    let day = a.getDay();
+    var dia = '';
+    switch(day){
+        case 0:
+            var dia = 'Domingo';
+            break;
+        case 1:
+            var dia ='Segunda-Feira';
+            break;
+        case 2:
+            var dia = 'Terça- Feira';
+            break;
+        case 3:
+            var dia = 'Quarta-Feira';
+            break;
+        case 4:
+            var dia = 'Quinta-Feira';
+        case 5:
+            var dia = 'Sexta-Feira';
+        case 6:
+            var dia = 'Sábado';
 }
 
+document.querySelector('#diaa').innerHTML=dia;
+
+}
